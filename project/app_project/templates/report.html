@@ -1,0 +1,19 @@
+<!-- templates/report.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Report</title>
+</head>
+<body>
+    <h1>Download Report</h1>
+    <form method="get" action="/report/">
+        <label for="period">Select Period:</label>
+        <select id="period" name="period_id">
+            {% for period in periods %}
+                <option value="{{ period.id }}">{{ period.month }} {{ period.year }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>

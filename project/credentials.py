@@ -1,0 +1,5 @@
+db_username = 'django_admin'
+db_password = '123456'
+db_host = 'localhost'
+db_port = '5432'
+db_name = 'django'
